@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\AllProxySession.cpp" />
+    <ClCompile Include="..\..\..\src\AllProxySvc.cpp" />
+    <ClCompile Include="..\..\..\src\chacha7.c" />
+    <ClCompile Include="..\..\..\src\EchoSvc.cpp" />
+    <ClCompile Include="..\..\..\src\HostStatistics.cpp" />
+    <ClCompile Include="..\..\..\src\http.cpp" />
+    <ClCompile Include="..\..\..\src\HttpsProxySeesion.cpp" />
+    <ClCompile Include="..\..\..\src\HttpsProxySvc.cpp" />
+    <ClCompile Include="..\..\..\src\HttpsUpStreamProxy.cpp" />
+    <ClCompile Include="..\..\..\src\IpPool.cpp" />
+    <ClCompile Include="..\..\..\src\Lobby.cpp" />
+    <ClCompile Include="..\..\..\src\main.cpp" />
+    <ClCompile Include="..\..\..\src\PeerID.cpp" />
+    <ClCompile Include="..\..\..\src\PermanentConnection.cpp" />
+    <ClCompile Include="..\..\..\src\PermanentConnectionEntry.cpp" />
+    <ClCompile Include="..\..\..\src\PermanentConnectionRelaySession.cpp" />
+    <ClCompile Include="..\..\..\src\PermanentConnectionRelaySvc.cpp" />
+    <ClCompile Include="..\..\..\src\PermanentConnectionStream.cpp" />
+    <ClCompile Include="..\..\..\src\ProxySvc.cpp" />
+    <ClCompile Include="..\..\..\src\RelaySession.cpp" />
+    <ClCompile Include="..\..\..\src\RelaySvc.cpp" />
+    <ClCompile Include="..\..\..\src\Socks5Session.cpp" />
+    <ClCompile Include="..\..\..\src\Socks5Svc.cpp" />
+    <ClCompile Include="..\..\..\src\SslStream.cpp" />
+    <ClCompile Include="..\..\..\src\SslUpStreamProxy.cpp" />
+    <ClCompile Include="..\..\..\src\static.cpp" />
+    <ClCompile Include="..\..\..\src\TcpEntry.cpp" />
+    <ClCompile Include="..\..\..\src\TcpStream.cpp" />
+    <ClCompile Include="..\..\..\src\test.cpp" />
+    <ClCompile Include="..\..\..\src\UpStreamProxy.cpp" />
+    <ClCompile Include="..\..\loadFile.cpp" />
+    <ClCompile Include="..\..\win32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\AllProxySession.h" />
+    <ClInclude Include="..\..\..\src\AllProxySvc.h" />
+    <ClInclude Include="..\..\..\src\Buffers.h" />
+    <ClInclude Include="..\..\..\src\chacha7.h" />
+    <ClInclude Include="..\..\..\src\EchoSvc.h" />
+    <ClInclude Include="..\..\..\src\Entry.h" />
+    <ClInclude Include="..\..\..\src\except.h" />
+    <ClInclude Include="..\..\..\src\Host.h" />
+    <ClInclude Include="..\..\..\src\HostPool.h" />
+    <ClInclude Include="..\..\..\src\HostStatistics.h" />
+    <ClInclude Include="..\..\..\src\http.h" />
+    <ClInclude Include="..\..\..\src\HttpsProxySeesion.h" />
+    <ClInclude Include="..\..\..\src\HttpsProxySvc.h" />
+    <ClInclude Include="..\..\..\src\HttpsUpStreamProxy.h" />
+    <ClInclude Include="..\..\..\src\IpPool.h" />
+    <ClInclude Include="..\..\..\src\Lobby.h" />
+    <ClInclude Include="..\..\..\src\PeerID.h" />
+    <ClInclude Include="..\..\..\src\PermanentConnection.h" />
+    <ClInclude Include="..\..\..\src\PermanentConnectionEntry.h" />
+    <ClInclude Include="..\..\..\src\PermanentConnectionRelaySession.h" />
+    <ClInclude Include="..\..\..\src\PermanentConnectionRelaySvc.h" />
+    <ClInclude Include="..\..\..\src\PermanentConnectionStream.h" />
+    <ClInclude Include="..\..\..\src\ProxySvc.h" />
+    <ClInclude Include="..\..\..\src\RelaySession.h" />
+    <ClInclude Include="..\..\..\src\RelaySvc.h" />
+    <ClInclude Include="..\..\..\src\Session.h" />
+    <ClInclude Include="..\..\..\src\Socks5Session.h" />
+    <ClInclude Include="..\..\..\src\Socks5Svc.h" />
+    <ClInclude Include="..\..\..\src\SslContext.h" />
+    <ClInclude Include="..\..\..\src\SslStream.h" />
+    <ClInclude Include="..\..\..\src\SslUpStreamProxy.h" />
+    <ClInclude Include="..\..\..\src\static.h" />
+    <ClInclude Include="..\..\..\src\Stream.h" />
+    <ClInclude Include="..\..\..\src\Svc.h" />
+    <ClInclude Include="..\..\..\src\TcpEntry.h" />
+    <ClInclude Include="..\..\..\src\TcpStream.h" />
+    <ClInclude Include="..\..\..\src\toBytes.h" />
+    <ClInclude Include="..\..\..\src\UpStreamProxy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\chacha-merged7.ipp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6929DBF5-51DA-4048-8807-85889125FF16}</ProjectGuid>
+    <RootNamespace>PolyProxy</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <PreprocessorDefinitions>NDEBUG;_WIN32_WINNT=0x0501;BOOST_ASIO_SEPARATE_COMPILATION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libssl-32.lib;libcrypto-32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
